@@ -1,0 +1,45 @@
+{
+  "name": "@topdaily-dev/repomark",
+  "version": "0.1.0",
+  "description": "Score README and OSS repo health — badges, license, docs, package.json — from the terminal",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "repomark": "bin/repomark.mjs"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test lib/*.test.mjs",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "readme",
+    "oss",
+    "repo-health",
+    "checklist",
+    "badges",
+    "cli",
+    "developer-tools",
+    "open-source"
+  ],
+  "license": "MIT",
+  "author": "TopDaily Dev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/topdaily-dev/repomark.git"
+  },
+  "homepage": "https://www.npmjs.com/package/@topdaily-dev/repomark",
+  "bugs": {
+    "url": "https://github.com/topdaily-dev/repomark/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
