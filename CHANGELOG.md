@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [0.1.1] - 2026-08-11
+
+### Fixed
+
+- Ensure package is publicly visible on the npm registry
+
 ## [0.1.0] - 2026-08-11
 
 ### Added

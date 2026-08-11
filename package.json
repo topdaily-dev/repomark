@@ -1,6 +1,6 @@
 {
   "name": "@topdaily-dev/repomark",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Score README and OSS repo health — badges, license, docs, package.json — from the terminal",
   "type": "module",
   "publishConfig": {
