@@ -4,13 +4,15 @@ repomark uses **npm trusted publishing** (OIDC) from GitHub Actions.
 
 ## One-time setup
 
-1. Sign in at [npmjs.com](https://www.npmjs.com/) as the package owner
-2. After the first publish, open https://www.npmjs.com/package/@topdaily-dev/repomark/access
-3. Under **Trusted publishing**, add GitHub Actions:
-   - **Organization or user:** `topdaily-dev`
-   - **Repository:** `repomark`
-   - **Workflow filename:** `publish-npm.yml`
-   - **Allowed actions:** `npm publish`
+On [npmjs.com](https://www.npmjs.com/) as **topdaily-dev**:
+
+| Field | Value |
+|-------|--------|
+| Repository | `topdaily-dev/repomark` |
+| Workflow | `publish-npm.yml` |
+| Permissions | `npm publish` |
+
+Or via package **Settings → Trusted publishing** after the first publish.
 
 ## First publish (local)
 
