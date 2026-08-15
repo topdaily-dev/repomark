@@ -77,6 +77,8 @@ npm test
 node bin/repomark.mjs check .
 ```
 
+Pair commits use human co-authors only — see [CONTRIBUTING.md](CONTRIBUTING.md) and [collab-kit git-attribution](https://github.com/kory-kaai/collab-kit/blob/main/docs/git-attribution.md).
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
