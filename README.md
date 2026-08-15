@@ -59,6 +59,8 @@ npx @topdaily-dev/badgekit row ci npm license \
   --npm @topdaily-dev/repomark
 ```
 
+Recipe: [badgekit repomark-check](https://github.com/topdaily-dev/badgekit/blob/main/docs/recipes/repomark-check.md).
+
 ## CLI
 
 ```bash
