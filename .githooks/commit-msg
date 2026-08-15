@@ -1,0 +1,16 @@
+#!/bin/sh
+# Reject commits that still contain Cursor attribution after prepare-commit-msg.
+MSG_FILE="$1"
+ROOT="$(git rev-parse --show-toplevel)"
+STRIP="$ROOT/tools/strip-cursor-trailers.mjs"
+
+if [ -f "$STRIP" ] && command -v node >/dev/null 2>&1; then
+  node "$STRIP" --check "$MSG_FILE"
+  exit $?
+fi
+
+if grep -Eiq 'cursoragent@cursor\.com|Co-authored-by: Cursor |Made-with: Cursor' "$MSG_FILE"; then
+  echo "Commit message contains forbidden Cursor attribution." >&2
+  echo "See docs/git-attribution.md" >&2
+  exit 1
+fi

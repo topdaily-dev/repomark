@@ -1,0 +1,7 @@
+{
+  "name": "healthy-fixture",
+  "description": "fixture",
+  "license": "MIT",
+  "repository": { "type": "git", "url": "https://github.com/acme/demo.git" },
+  "engines": { "node": ">=20" }
+}

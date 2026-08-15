@@ -30,9 +30,17 @@ OSS repos quietly rot: missing license, no security policy, thin README, no badg
 npx @topdaily-dev/repomark check .
 npx @topdaily-dev/repomark check . --json
 npx @topdaily-dev/repomark fix . --dry-run
+npx @topdaily-dev/repomark fix .
 ```
 
 Exit code is `1` when the score is below `--min` (default `70`) — useful in CI.
+
+```yaml
+# .github/workflows/repomark.yml
+- uses: topdaily-dev/repomark-action@v1
+  with:
+    min: "70"
+```
 
 ## What it checks
 
@@ -46,6 +54,9 @@ Exit code is `1` when the score is below `--min` (default `70`) — useful in CI
 | package.json | name, description, license, repository, engines |
 | CI | `.github/workflows` |
 | Issue templates | `.github/ISSUE_TEMPLATE` |
+| Code of conduct | `CODE_OF_CONDUCT.md` |
+| Dependabot | `.github/dependabot.yml` |
+| Node version | `.nvmrc` vs `engines.node` |
 | Topics | Reminder only (needs GitHub UI / API) |
 
 ## Pair with badgekit
@@ -65,10 +76,10 @@ Recipe: [badgekit repomark-check](https://github.com/topdaily-dev/badgekit/blob/
 
 ```bash
 repomark check [dir] [--min N] [--json]
-repomark fix [dir] --dry-run
+repomark fix [dir] [--dry-run] [--json]
 ```
 
-`fix` in v0.1 only prints suggestions — it never writes files.
+`fix` writes safe templates for missing LICENSE, SECURITY.md, CONTRIBUTING.md, CODE_OF_CONDUCT.md, Dependabot config, `.nvmrc`, and a starter CI workflow. Use `--dry-run` to preview.
 
 ## Development
 

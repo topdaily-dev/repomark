@@ -1,0 +1,23 @@
+#!/bin/sh
+# Strip Cursor / agent co-author trailers before the commit is recorded.
+MSG_FILE="$1"
+ROOT="$(git rev-parse --show-toplevel)"
+STRIP="$ROOT/tools/strip-cursor-trailers.mjs"
+
+if [ -f "$STRIP" ] && command -v node >/dev/null 2>&1; then
+  node "$STRIP" "$MSG_FILE" >&2
+  exit 0
+fi
+
+# Fallback when tools/strip-cursor-trailers.mjs is unavailable.
+sed -i.bak \
+  -e '/cursoragent@cursor\.com/d' \
+  -e '/Co-authored-by: Cursor /d' \
+  -e '/Made-with: Cursor/d' \
+  "$MSG_FILE" 2>/dev/null \
+  || sed -i '' \
+  -e '/cursoragent@cursor\.com/d' \
+  -e '/Co-authored-by: Cursor /d' \
+  -e '/Made-with: Cursor/d' \
+  "$MSG_FILE"
+rm -f "$MSG_FILE.bak"
