@@ -26,3 +26,11 @@ Co-authored-by: TopDaily Dev <315340167+topdaily-dev@users.noreply.github.com>
 ```
 
 Do not use agent or bot co-author lines. See [collab-kit git-attribution](https://github.com/kory-kaai/collab-kit/blob/main/docs/git-attribution.md).
+
+## Bootstrap with collab-kit
+
+New repos can install repomark CI and the rest of the OSS toolchain in one command:
+
+```bash
+npx @korykaai/collab-kit init . --oss-toolchain
+```
