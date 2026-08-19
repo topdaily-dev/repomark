@@ -10,6 +10,7 @@
 - Checks for code of conduct, Dependabot, and Node version alignment (`.nvmrc` vs `engines.node`)
 - Fixture repos under `test/fixtures/` for integration-style tests
 - Documented `topdaily-dev/repomark-action` for CI
+- collab-kit `init --oss-toolchain` bootstrap documented in npm-publish guide
 
 ### Changed
 
