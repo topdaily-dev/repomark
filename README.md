@@ -92,6 +92,8 @@ repomark fix [dir] [--dry-run] [--json]
 
 `fix` writes safe templates for missing LICENSE, SECURITY.md, CONTRIBUTING.md, CODE_OF_CONDUCT.md, Dependabot config, `.nvmrc`, and a starter CI workflow. Use `--dry-run` to preview.
 
+After repo health passes, ship releases with [@topdaily-dev/shipkit](https://github.com/topdaily-dev/shipkit).
+
 ## Development
 
 ```bash
