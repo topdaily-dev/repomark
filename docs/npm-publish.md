@@ -29,3 +29,13 @@ Create a GitHub release (`vX.Y.Z`) matching `package.json`, or:
 ```bash
 gh workflow run publish-npm.yml -R topdaily-dev/repomark
 ```
+
+## Pair with collab-kit
+
+Bootstrap the full OSS toolchain (including repomark CI) in one step:
+
+```bash
+npx @korykaai/collab-kit init . --oss-toolchain
+```
+
+See [collab-kit oss-toolchain](https://github.com/kory-kaai/collab-kit/blob/main/examples/oss-toolchain.md).
