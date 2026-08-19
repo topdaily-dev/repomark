@@ -9,3 +9,5 @@ https://github.com/topdaily-dev/repomark/security/advisories/new
 Or email the maintainers via the contact listed on the GitHub organization profile.
 
 Do not open a public issue for security vulnerabilities.
+
+Report issues in collab-kit or the broader OSS toolchain via each repo's SECURITY.md.
