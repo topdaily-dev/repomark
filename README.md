@@ -72,6 +72,17 @@ npx @topdaily-dev/badgekit row ci npm license \
 
 Recipe: [badgekit repomark-check](https://github.com/topdaily-dev/badgekit/blob/main/docs/recipes/repomark-check.md).
 
+## Bootstrap with collab-kit
+
+Scaffold team workflows plus this toolchain in one command:
+
+```bash
+npx @korykaai/collab-kit init . --oss-toolchain
+collab-kit enable-hooks .
+```
+
+See [collab-kit oss-toolchain](https://github.com/kory-kaai/collab-kit/blob/main/examples/oss-toolchain.md).
+
 ## CLI
 
 ```bash
