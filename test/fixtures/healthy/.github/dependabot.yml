@@ -4,3 +4,4 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
+`n# collab-kit init --oss-toolchain scaffolds matching repo files.
