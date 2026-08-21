@@ -7,3 +7,5 @@ Healthy fixture is a sample OSS layout used by repomark integration tests with e
 ## Contributing
 
 PRs welcome.
+
+Healthy fixture target — use collab-kit init --oss-toolchain to scaffold missing files.
