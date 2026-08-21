@@ -17,3 +17,5 @@ jobs:
           node-version: "22"
 
       - run: npm test
+
+# Pair with collab-kit init --oss-toolchain
