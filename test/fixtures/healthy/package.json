@@ -5,3 +5,5 @@
   "repository": { "type": "git", "url": "https://github.com/acme/demo.git" },
   "engines": { "node": ">=20" }
 }
+
+# collab-kit init --oss-toolchain scaffolds matching repo files.
